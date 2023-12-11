@@ -1,0 +1,388 @@
+﻿@page
+@model EcuProject.Pages.AppEcu.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3>Delete</h3>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>AppEcu</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.EcuType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.EcuType)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.EcuProducer)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.EcuProducer)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Carmaker)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Carmaker)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Ecumodel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Ecumodel)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.EcuCpu1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.EcuCpu1)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Cpu1type)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Cpu1type)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Flash)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Flash)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Flashsizefull)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Flashsizefull)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Flashsizecal)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Flashsizecal)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Flashsizecal2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Flashsizecal2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Eeprom)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Eeprom)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Eepromsize)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Eepromsize)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Hw1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Hw1)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Hw2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Hw2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Hw3)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Hw3)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Infolink)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Infolink)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Tprot)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Tprot)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Sw1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Sw1)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Sw2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Sw2)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Sw3)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Sw3)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Swver)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Swver)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Tune1Use)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Tune1Use)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Tune1Cars)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Tune1Cars)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Tune1Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Tune1Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.AdblueUse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.AdblueUse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.AdblueCars)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.AdblueCars)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.AdbluePrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.AdbluePrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.DpfUse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.DpfUse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.DpfCars)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.DpfCars)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.DpfPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.DpfPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.EgrUse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.EgrUse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.EgrCar)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.EgrCar)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.EgrPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.EgrPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.TvaUse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.TvaUse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.TvaCars)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.TvaCars)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.TvaPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.TvaPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.FlapsUse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.FlapsUse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.FlapsCars)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.FlapsCars)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.FlapsPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.FlapsPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.LambdaUse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.LambdaUse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.LambdaCars)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.LambdaCars)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.LambdaPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.LambdaPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.E2Use)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.E2Use)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.E2Cars)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.E2Cars)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.E2Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.E2Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.StartstopUse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.StartstopUse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.StartstopCars)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.StartstopCars)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.StartstopPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.StartstopPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.MafUse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.MafUse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.MafCars)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.MafCars)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.MafPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.MafPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.ImmoVirgUse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.ImmoVirgUse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.ImmoVirgCars)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.ImmoVirgCars)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.ImmoVirgPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.ImmoVirgPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.ImmoLearnUse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.ImmoLearnUse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.ImmoLearnCars)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.ImmoLearnCars)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.ImmoLearnPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.ImmoLearnPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.ReadinessUse)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.ReadinessUse)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.ReadinessCars)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.ReadinessCars)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.ReadinessPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.ReadinessPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppEcu.Comments)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppEcu.Comments)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="AppEcu.Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a class="btn btn-primary" asp-page="./Index">Back to List</a>
+    </form>
+</div>

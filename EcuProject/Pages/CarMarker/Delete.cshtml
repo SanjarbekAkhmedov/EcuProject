@@ -1,0 +1,28 @@
+﻿@page
+@model EcuProject.Pages.CarMarker.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3>Delete</h3>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Car maker</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppCarmaker.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppCarmaker.Name)
+        </dd>
+    </dl>
+
+    <form method="post">
+        <input type="hidden" asp-for="AppCarmaker.Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a class="btn btn-primary" asp-page="./Index">Back to List</a>
+    </form>
+</div>

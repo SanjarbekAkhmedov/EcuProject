@@ -1,0 +1,336 @@
+﻿@page
+@model EcuProject.Pages.AppEcu.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h3>Create</h3>
+
+<h4>AppEcu</h4>
+<hr />
+<div class="row">
+    <div class="col-md-5">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AppEcu.EcuType" class="control-label"></label>
+                <input asp-for="AppEcu.EcuType" class="form-control" />
+                <span asp-validation-for="AppEcu.EcuType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.EcuProducer" class="control-label"></label>
+                <input asp-for="AppEcu.EcuProducer" class="form-control" />
+                <span asp-validation-for="AppEcu.EcuProducer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Carmaker" class="control-label"></label>
+                <input asp-for="AppEcu.Carmaker" class="form-control" />
+                <span asp-validation-for="AppEcu.Carmaker" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Ecumodel" class="control-label"></label>
+                <input asp-for="AppEcu.Ecumodel" class="form-control" />
+                <span asp-validation-for="AppEcu.Ecumodel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.EcuCpu1" class="control-label"></label>
+                <input asp-for="AppEcu.EcuCpu1" class="form-control" />
+                <span asp-validation-for="AppEcu.EcuCpu1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Cpu1type" class="control-label"></label>
+                <input asp-for="AppEcu.Cpu1type" class="form-control" />
+                <span asp-validation-for="AppEcu.Cpu1type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Flash" class="control-label"></label>
+                <input asp-for="AppEcu.Flash" class="form-control" />
+                <span asp-validation-for="AppEcu.Flash" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Flashsizefull" class="control-label"></label>
+                <input asp-for="AppEcu.Flashsizefull" class="form-control" />
+                <span asp-validation-for="AppEcu.Flashsizefull" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Flashsizecal" class="control-label"></label>
+                <input asp-for="AppEcu.Flashsizecal" class="form-control" />
+                <span asp-validation-for="AppEcu.Flashsizecal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Flashsizecal2" class="control-label"></label>
+                <input asp-for="AppEcu.Flashsizecal2" class="form-control" />
+                <span asp-validation-for="AppEcu.Flashsizecal2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Eeprom" class="control-label"></label>
+                <input asp-for="AppEcu.Eeprom" class="form-control" />
+                <span asp-validation-for="AppEcu.Eeprom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Eepromsize" class="control-label"></label>
+                <input asp-for="AppEcu.Eepromsize" class="form-control" />
+                <span asp-validation-for="AppEcu.Eepromsize" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Hw1" class="control-label"></label>
+                <input asp-for="AppEcu.Hw1" class="form-control" />
+                <span asp-validation-for="AppEcu.Hw1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Hw2" class="control-label"></label>
+                <input asp-for="AppEcu.Hw2" class="form-control" />
+                <span asp-validation-for="AppEcu.Hw2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Hw3" class="control-label"></label>
+                <input asp-for="AppEcu.Hw3" class="form-control" />
+                <span asp-validation-for="AppEcu.Hw3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Infolink" class="control-label"></label>
+                <input asp-for="AppEcu.Infolink" class="form-control" />
+                <span asp-validation-for="AppEcu.Infolink" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Tprot" class="control-label"></label>
+                <input asp-for="AppEcu.Tprot" class="form-control" />
+                <span asp-validation-for="AppEcu.Tprot" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Sw1" class="control-label"></label>
+                <input asp-for="AppEcu.Sw1" class="form-control" />
+                <span asp-validation-for="AppEcu.Sw1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Sw2" class="control-label"></label>
+                <input asp-for="AppEcu.Sw2" class="form-control" />
+                <span asp-validation-for="AppEcu.Sw2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Sw3" class="control-label"></label>
+                <input asp-for="AppEcu.Sw3" class="form-control" />
+                <span asp-validation-for="AppEcu.Sw3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Swver" class="control-label"></label>
+                <input asp-for="AppEcu.Swver" class="form-control" />
+                <span asp-validation-for="AppEcu.Swver" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Tune1Use" class="control-label"></label>
+                <input asp-for="AppEcu.Tune1Use" class="form-control" />
+                <span asp-validation-for="AppEcu.Tune1Use" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Tune1Cars" class="control-label"></label>
+                <input asp-for="AppEcu.Tune1Cars" class="form-control" />
+                <span asp-validation-for="AppEcu.Tune1Cars" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Tune1Price" class="control-label"></label>
+                <input asp-for="AppEcu.Tune1Price" class="form-control" />
+                <span asp-validation-for="AppEcu.Tune1Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.AdblueUse" class="control-label"></label>
+                <input asp-for="AppEcu.AdblueUse" class="form-control" />
+                <span asp-validation-for="AppEcu.AdblueUse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.AdblueCars" class="control-label"></label>
+                <input asp-for="AppEcu.AdblueCars" class="form-control" />
+                <span asp-validation-for="AppEcu.AdblueCars" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.AdbluePrice" class="control-label"></label>
+                <input asp-for="AppEcu.AdbluePrice" class="form-control" />
+                <span asp-validation-for="AppEcu.AdbluePrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.DpfUse" class="control-label"></label>
+                <input asp-for="AppEcu.DpfUse" class="form-control" />
+                <span asp-validation-for="AppEcu.DpfUse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.DpfCars" class="control-label"></label>
+                <input asp-for="AppEcu.DpfCars" class="form-control" />
+                <span asp-validation-for="AppEcu.DpfCars" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.DpfPrice" class="control-label"></label>
+                <input asp-for="AppEcu.DpfPrice" class="form-control" />
+                <span asp-validation-for="AppEcu.DpfPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.EgrUse" class="control-label"></label>
+                <input asp-for="AppEcu.EgrUse" class="form-control" />
+                <span asp-validation-for="AppEcu.EgrUse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.EgrCar" class="control-label"></label>
+                <input asp-for="AppEcu.EgrCar" class="form-control" />
+                <span asp-validation-for="AppEcu.EgrCar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.EgrPrice" class="control-label"></label>
+                <input asp-for="AppEcu.EgrPrice" class="form-control" />
+                <span asp-validation-for="AppEcu.EgrPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.TvaUse" class="control-label"></label>
+                <input asp-for="AppEcu.TvaUse" class="form-control" />
+                <span asp-validation-for="AppEcu.TvaUse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.TvaCars" class="control-label"></label>
+                <input asp-for="AppEcu.TvaCars" class="form-control" />
+                <span asp-validation-for="AppEcu.TvaCars" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.TvaPrice" class="control-label"></label>
+                <input asp-for="AppEcu.TvaPrice" class="form-control" />
+                <span asp-validation-for="AppEcu.TvaPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.FlapsUse" class="control-label"></label>
+                <input asp-for="AppEcu.FlapsUse" class="form-control" />
+                <span asp-validation-for="AppEcu.FlapsUse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.FlapsCars" class="control-label"></label>
+                <input asp-for="AppEcu.FlapsCars" class="form-control" />
+                <span asp-validation-for="AppEcu.FlapsCars" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.FlapsPrice" class="control-label"></label>
+                <input asp-for="AppEcu.FlapsPrice" class="form-control" />
+                <span asp-validation-for="AppEcu.FlapsPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.LambdaUse" class="control-label"></label>
+                <input asp-for="AppEcu.LambdaUse" class="form-control" />
+                <span asp-validation-for="AppEcu.LambdaUse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.LambdaCars" class="control-label"></label>
+                <input asp-for="AppEcu.LambdaCars" class="form-control" />
+                <span asp-validation-for="AppEcu.LambdaCars" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.LambdaPrice" class="control-label"></label>
+                <input asp-for="AppEcu.LambdaPrice" class="form-control" />
+                <span asp-validation-for="AppEcu.LambdaPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.E2Use" class="control-label"></label>
+                <input asp-for="AppEcu.E2Use" class="form-control" />
+                <span asp-validation-for="AppEcu.E2Use" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.E2Cars" class="control-label"></label>
+                <input asp-for="AppEcu.E2Cars" class="form-control" />
+                <span asp-validation-for="AppEcu.E2Cars" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.E2Price" class="control-label"></label>
+                <input asp-for="AppEcu.E2Price" class="form-control" />
+                <span asp-validation-for="AppEcu.E2Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.StartstopUse" class="control-label"></label>
+                <input asp-for="AppEcu.StartstopUse" class="form-control" />
+                <span asp-validation-for="AppEcu.StartstopUse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.StartstopCars" class="control-label"></label>
+                <input asp-for="AppEcu.StartstopCars" class="form-control" />
+                <span asp-validation-for="AppEcu.StartstopCars" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.StartstopPrice" class="control-label"></label>
+                <input asp-for="AppEcu.StartstopPrice" class="form-control" />
+                <span asp-validation-for="AppEcu.StartstopPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.MafUse" class="control-label"></label>
+                <input asp-for="AppEcu.MafUse" class="form-control" />
+                <span asp-validation-for="AppEcu.MafUse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.MafCars" class="control-label"></label>
+                <input asp-for="AppEcu.MafCars" class="form-control" />
+                <span asp-validation-for="AppEcu.MafCars" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.MafPrice" class="control-label"></label>
+                <input asp-for="AppEcu.MafPrice" class="form-control" />
+                <span asp-validation-for="AppEcu.MafPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.ImmoVirgUse" class="control-label"></label>
+                <input asp-for="AppEcu.ImmoVirgUse" class="form-control" />
+                <span asp-validation-for="AppEcu.ImmoVirgUse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.ImmoVirgCars" class="control-label"></label>
+                <input asp-for="AppEcu.ImmoVirgCars" class="form-control" />
+                <span asp-validation-for="AppEcu.ImmoVirgCars" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.ImmoVirgPrice" class="control-label"></label>
+                <input asp-for="AppEcu.ImmoVirgPrice" class="form-control" />
+                <span asp-validation-for="AppEcu.ImmoVirgPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.ImmoLearnUse" class="control-label"></label>
+                <input asp-for="AppEcu.ImmoLearnUse" class="form-control" />
+                <span asp-validation-for="AppEcu.ImmoLearnUse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.ImmoLearnCars" class="control-label"></label>
+                <input asp-for="AppEcu.ImmoLearnCars" class="form-control" />
+                <span asp-validation-for="AppEcu.ImmoLearnCars" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.ImmoLearnPrice" class="control-label"></label>
+                <input asp-for="AppEcu.ImmoLearnPrice" class="form-control" />
+                <span asp-validation-for="AppEcu.ImmoLearnPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.ReadinessUse" class="control-label"></label>
+                <input asp-for="AppEcu.ReadinessUse" class="form-control" />
+                <span asp-validation-for="AppEcu.ReadinessUse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.ReadinessCars" class="control-label"></label>
+                <input asp-for="AppEcu.ReadinessCars" class="form-control" />
+                <span asp-validation-for="AppEcu.ReadinessCars" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.ReadinessPrice" class="control-label"></label>
+                <input asp-for="AppEcu.ReadinessPrice" class="form-control" />
+                <span asp-validation-for="AppEcu.ReadinessPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppEcu.Comments" class="control-label"></label>
+                <input asp-for="AppEcu.Comments" class="form-control" />
+                <span asp-validation-for="AppEcu.Comments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-primary" asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

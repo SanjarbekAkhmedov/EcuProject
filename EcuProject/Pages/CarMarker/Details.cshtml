@@ -1,0 +1,25 @@
+﻿@page
+@model EcuProject.Pages.CarMarker.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>AppCarmaker</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AppCarmaker.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AppCarmaker.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@Model.AppCarmaker.Id">Edit</a> |
+    <a class="btn btn-primary" asp-page="./Index">Back to List</a>
+</div>
