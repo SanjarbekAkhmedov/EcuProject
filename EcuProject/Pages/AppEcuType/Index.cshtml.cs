@@ -13,9 +13,9 @@ namespace EcuProject.Pages.AppEcuType
 
     public class IndexModel : PageModel
     {
-        private readonly EcuProject.Data.EcuContext _context;
+        private readonly EcuProject.Data.B29838evEcubaseContext _context;
 
-        public IndexModel(EcuProject.Data.EcuContext context)
+        public IndexModel(EcuProject.Data.B29838evEcubaseContext context)
         {
             _context = context;
         }
@@ -24,7 +24,7 @@ namespace EcuProject.Pages.AppEcuType
 
         public async Task OnGetAsync()
         {
-            AppEcuType = await _context.AppEcuType.ToListAsync();
+            AppEcuType = await _context.AppEcuTypes.ToListAsync();
         }
     }
 }

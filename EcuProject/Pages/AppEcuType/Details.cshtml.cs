@@ -13,9 +13,9 @@ namespace EcuProject.Pages.AppEcuType
 
     public class DetailsModel : PageModel
     {
-        private readonly EcuProject.Data.EcuContext _context;
+        private readonly EcuProject.Data.B29838evEcubaseContext _context;
 
-        public DetailsModel(EcuProject.Data.EcuContext context)
+        public DetailsModel(EcuProject.Data.B29838evEcubaseContext context)
         {
             _context = context;
         }
@@ -29,7 +29,7 @@ namespace EcuProject.Pages.AppEcuType
                 return NotFound();
             }
 
-            var appecutype = await _context.AppEcuType.FirstOrDefaultAsync(m => m.Id == id);
+            var appecutype = await _context.AppEcuTypes.FirstOrDefaultAsync(m => m.Id == id);
             if (appecutype == null)
             {
                 return NotFound();

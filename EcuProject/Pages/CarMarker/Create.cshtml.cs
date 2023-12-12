@@ -12,9 +12,9 @@ namespace EcuProject.Pages.CarMarker
 {
     public class CreateModel : PageModel
     {
-        private readonly EcuProject.Data.EcuContext _context;
+        private readonly EcuProject.Data.B29838evEcubaseContext _context;
 
-        public CreateModel(EcuProject.Data.EcuContext context)
+        public CreateModel(EcuProject.Data.B29838evEcubaseContext context)
         {
             _context = context;
         }
@@ -35,7 +35,7 @@ namespace EcuProject.Pages.CarMarker
                 return Page();
             }
 
-            _context.AppCarmaker.Add(AppCarmaker);
+            _context.AppCarmakers.Add(AppCarmaker);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

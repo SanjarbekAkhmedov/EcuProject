@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EcuProject.Model;
 
-public partial class AppEcuSagem
+[Table("app_ecu_sagem")]
+public partial class AppEcuSagem : BaseEntity
 {
-    public int Id { get; set; }
-
-    public string Name { get; set; } = null!;
 }

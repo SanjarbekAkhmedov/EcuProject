@@ -7,9 +7,9 @@ namespace EcuProject.Pages.CarMarker
 {
     public class IndexModel : PageModel
     {
-        private readonly EcuContext _context;
+        private readonly B29838evEcubaseContext _context;
 
-        public IndexModel(EcuContext context)
+        public IndexModel(B29838evEcubaseContext context)
         {
             _context = context;
         }
@@ -18,7 +18,7 @@ namespace EcuProject.Pages.CarMarker
 
         public async Task OnGetAsync()
         {
-            AppCarmaker = await _context.AppCarmaker.ToListAsync();
+            AppCarmaker = await _context.AppCarmakers.ToListAsync();
         }
     }
 }

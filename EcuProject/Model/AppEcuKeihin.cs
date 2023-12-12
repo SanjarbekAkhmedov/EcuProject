@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EcuProject.Model;
 
-public partial class AppEcuKeihin
+[Table("app_ecu_keihin")]
+public partial class AppEcuKeihin : BaseEntity
 {
-    public int Id { get; set; }
-
-    public string Name { get; set; } = null!;
 }

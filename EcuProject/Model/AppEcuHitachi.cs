@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EcuProject.Model;
 
-public partial class AppEcuHitachi
+[Table("app_ecu_hitachi")]
+public partial class AppEcuHitachi : BaseEntity
 {
-    public int Id { get; set; }
-
-    public string Name { get; set; } = null!;
 }

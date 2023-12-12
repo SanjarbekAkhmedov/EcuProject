@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EcuProject.Model;
 
-public partial class AppEcuTrw
+[Table("app_ecu_trw")]
+public partial class AppEcuTrw : BaseEntity
 {
-    public int Id { get; set; }
-
-    public string Name { get; set; } = null!;
 
     public string? Ecutype { get; set; }
 }

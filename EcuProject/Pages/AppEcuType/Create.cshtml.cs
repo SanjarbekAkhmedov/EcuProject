@@ -13,9 +13,9 @@ namespace EcuProject.Pages.AppEcuType
 
     public class CreateModel : PageModel
     {
-        private readonly EcuProject.Data.EcuContext _context;
+        private readonly EcuProject.Data.B29838evEcubaseContext _context;
 
-        public CreateModel(EcuProject.Data.EcuContext context)
+        public CreateModel(EcuProject.Data.B29838evEcubaseContext context)
         {
             _context = context;
         }
@@ -36,7 +36,7 @@ namespace EcuProject.Pages.AppEcuType
                 return Page();
             }
 
-            _context.AppEcuType.Add(AppEcuType);
+            _context.AppEcuTypes.Add(AppEcuType);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

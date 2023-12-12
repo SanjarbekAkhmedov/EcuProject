@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using EcuProject.Model;
 
-namespace EcuProject.Model;
+namespace EcuProject.Data;
 
 public partial class B29838evEcubaseContext : DbContext
 {

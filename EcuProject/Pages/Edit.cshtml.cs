@@ -13,9 +13,9 @@ namespace EcuProject.Pages.AppEcu
 
     public class EditModel : PageModel
     {
-        private readonly EcuProject.Data.EcuContext _context;
+        private readonly EcuProject.Data.B29838evEcubaseContext _context;
 
-        public EditModel(EcuProject.Data.EcuContext context)
+        public EditModel(EcuProject.Data.B29838evEcubaseContext context)
         {
             _context = context;
         }
@@ -30,7 +30,7 @@ namespace EcuProject.Pages.AppEcu
                 return NotFound();
             }
 
-            var appecu =  await _context.AppEcu.FirstOrDefaultAsync(m => m.Id == id);
+            var appecu =  await _context.AppEcus.FirstOrDefaultAsync(m => m.Id == id);
             if (appecu == null)
             {
                 return NotFound();
@@ -39,8 +39,6 @@ namespace EcuProject.Pages.AppEcu
             return Page();
         }
 
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -71,7 +69,7 @@ namespace EcuProject.Pages.AppEcu
 
         private bool AppEcuExists(int id)
         {
-            return _context.AppEcu.Any(e => e.Id == id);
+            return _context.AppEcus.Any(e => e.Id == id);
         }
     }
 }

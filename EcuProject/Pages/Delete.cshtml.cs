@@ -6,9 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 
-namespace EcuProject.Pages.AppEcuType
+namespace EcuProject.Pages.AppEcu
 {
-    using EcuProject.Data;
     using EcuProject.Model;
 
     public class DeleteModel : PageModel
@@ -21,7 +20,7 @@ namespace EcuProject.Pages.AppEcuType
         }
 
         [BindProperty]
-        public AppEcuType AppEcuType { get; set; } = default!;
+        public AppEcu AppEcu { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -30,15 +29,15 @@ namespace EcuProject.Pages.AppEcuType
                 return NotFound();
             }
 
-            var appecutype = await _context.AppEcuTypes.FirstOrDefaultAsync(m => m.Id == id);
+            var appecu = await _context.AppEcus.FirstOrDefaultAsync(m => m.Id == id);
 
-            if (appecutype == null)
+            if (appecu == null)
             {
                 return NotFound();
             }
             else
             {
-                AppEcuType = appecutype;
+                AppEcu = appecu;
             }
             return Page();
         }
@@ -50,11 +49,11 @@ namespace EcuProject.Pages.AppEcuType
                 return NotFound();
             }
 
-            var appecutype = await _context.AppEcuTypes.FindAsync(id);
-            if (appecutype != null)
+            var appecu = await _context.AppEcus.FindAsync(id);
+            if (appecu != null)
             {
-                AppEcuType = appecutype;
-                _context.AppEcuTypes.Remove(AppEcuType);
+                AppEcu = appecu;
+                _context.AppEcus.Remove(AppEcu);
                 await _context.SaveChangesAsync();
             }
 

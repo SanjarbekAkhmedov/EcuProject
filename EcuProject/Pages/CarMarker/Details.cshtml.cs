@@ -12,9 +12,9 @@ namespace EcuProject.Pages.CarMarker
 {
     public class DetailsModel : PageModel
     {
-        private readonly EcuProject.Data.EcuContext _context;
+        private readonly EcuProject.Data.B29838evEcubaseContext _context;
 
-        public DetailsModel(EcuProject.Data.EcuContext context)
+        public DetailsModel(EcuProject.Data.B29838evEcubaseContext context)
         {
             _context = context;
         }
@@ -28,7 +28,7 @@ namespace EcuProject.Pages.CarMarker
                 return NotFound();
             }
 
-            var appcarmaker = await _context.AppCarmaker.FirstOrDefaultAsync(m => m.Id == id);
+            var appcarmaker = await _context.AppCarmakers.FirstOrDefaultAsync(m => m.Id == id);
             if (appcarmaker == null)
             {
                 return NotFound();

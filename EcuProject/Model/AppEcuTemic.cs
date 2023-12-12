@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EcuProject.Model;
 
-public partial class AppEcuTemic
+[Table("app_ecu_temic")]
+public partial class AppEcuTemic : BaseEntity
 {
-    public int Id { get; set; }
-
-    public string Name { get; set; } = null!;
-
     public string? Ecutype { get; set; }
 }

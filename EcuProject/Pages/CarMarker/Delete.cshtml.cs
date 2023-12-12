@@ -12,9 +12,9 @@ namespace EcuProject.Pages.CarMarker
 {
     public class DeleteModel : PageModel
     {
-        private readonly EcuProject.Data.EcuContext _context;
+        private readonly EcuProject.Data.B29838evEcubaseContext _context;
 
-        public DeleteModel(EcuProject.Data.EcuContext context)
+        public DeleteModel(EcuProject.Data.B29838evEcubaseContext context)
         {
             _context = context;
         }
@@ -29,7 +29,7 @@ namespace EcuProject.Pages.CarMarker
                 return NotFound();
             }
 
-            var appcarmaker = await _context.AppCarmaker.FirstOrDefaultAsync(m => m.Id == id);
+            var appcarmaker = await _context.AppCarmakers.FirstOrDefaultAsync(m => m.Id == id);
 
             if (appcarmaker == null)
             {
@@ -49,11 +49,11 @@ namespace EcuProject.Pages.CarMarker
                 return NotFound();
             }
 
-            var appcarmaker = await _context.AppCarmaker.FindAsync(id);
+            var appcarmaker = await _context.AppCarmakers.FindAsync(id);
             if (appcarmaker != null)
             {
                 AppCarmaker = appcarmaker;
-                _context.AppCarmaker.Remove(AppCarmaker);
+                _context.AppCarmakers.Remove(AppCarmaker);
                 await _context.SaveChangesAsync();
             }
 

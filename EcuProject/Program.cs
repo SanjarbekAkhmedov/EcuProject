@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<EcuContext>();
+builder.Services.AddDbContext<B29838evEcubaseContext>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
