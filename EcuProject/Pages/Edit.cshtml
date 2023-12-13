@@ -16,17 +16,35 @@
             <input type="hidden" asp-for="AppEcu.Id" />
             <div class="form-group">
                 <label asp-for="AppEcu.EcuType" class="control-label"></label>
-                <input asp-for="AppEcu.EcuType" class="form-control" />
+                <select asp-for="AppEcu.EcuType" class="form-control">
+                    <option value="">Select ecu type</option>
+                    @foreach (var ecuType in Model.AppEcuTypes)
+                    {
+                        <option value="@ecuType.Id">@ecuType.Name</option>
+                    }
+                </select>
                 <span asp-validation-for="AppEcu.EcuType" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="AppEcu.EcuProducer" class="control-label"></label>
-                <input asp-for="AppEcu.EcuProducer" class="form-control" />
+                <select asp-for="AppEcu.EcuType" class="form-control">
+                    <option value="">Select ecu producers</option>
+                    @foreach (var ecuType in Model.AppEcuProducers)
+                    {
+                        <option value="@ecuType.Id">@ecuType.Name</option>
+                    }
+                </select>
                 <span asp-validation-for="AppEcu.EcuProducer" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="AppEcu.Carmaker" class="control-label"></label>
-                <input asp-for="AppEcu.Carmaker" class="form-control" />
+                <select asp-for="AppEcu.EcuType" class="form-control">
+                    <option value="">Select car maker</option>
+                    @foreach (var ecuType in Model.AppCarmakers)
+                    {
+                        <option value="@ecuType.Id">@ecuType.Name</option>
+                    }
+                </select>
                 <span asp-validation-for="AppEcu.Carmaker" class="text-danger"></span>
             </div>
             <div class="form-group">
